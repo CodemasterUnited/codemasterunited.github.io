@@ -11,6 +11,21 @@
         <div id="gallery">
         	<p class="gallery-heading">Welcome To Codemaster United's Github Page</p>
         </div>
+        <script>
+        	/* Gallery Section */
+            var gallery = document.getElementById('gallery');
+            var galleryImages = ['https://iili.io/HNg93uf.jpg', 'https://iili.io/HNg9hnp.jpg', 'https://iili.io/HNg9WtR.jpg'];
+            
+            var i = 0;
+            setInterval(function() {
+            	if (i < galleryImages.length) {
+                	i++;
+                } else {
+                	i = 0;
+                }
+            	gallery.style.setProperty('background-image', galleryImages[i]);
+            }, 1000);
+        </script>
     </body>
 </html>
 <style>
