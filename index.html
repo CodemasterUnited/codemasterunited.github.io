@@ -21,7 +21,8 @@
                 var image = new Image().src = galleryImages[i];
             }
             
-            image.onload = function() {
+            image.onloadend = function() {
+            	console.log('hh');
             var i = 0;
             setInterval(function() {
             	console.log(i);
