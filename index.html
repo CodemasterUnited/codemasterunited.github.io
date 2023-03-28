@@ -12,9 +12,15 @@
         	<p class="gallery-heading">Welcome To Codemaster United's Github Page</p>
         </div>
         <script>
+        	
         	/* Gallery Section */
             var gallery = document.getElementById('gallery');
             var galleryImages = ['https://iili.io/HNg93uf.jpg', 'https://iili.io/HNg9hnp.jpg', 'https://iili.io/HNg9WtR.jpg'];
+            
+            for (var i = 0; i < galleryImages.length; i++) {
+                images[i] = new Image();
+                images[i].src = galleryImages[i];
+            }
             
             var i = 0;
             setInterval(function() {
