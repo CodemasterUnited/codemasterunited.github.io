@@ -18,20 +18,21 @@
             var galleryImages = ['https://iili.io/HNg93uf.jpg', 'https://iili.io/HNg9hnp.jpg', 'https://iili.io/HNg9WtR.jpg'];
             
             for (var i = 0; i < galleryImages.length; i++) {
-                images[i] = new Image();
-                images[i].src = galleryImages[i];
+                var image = new Image().src = galleryImages[i];
             }
             
+            image.onload = function() {
             var i = 0;
             setInterval(function() {
             	console.log(i);
-            	if (i < galleryImages.length) {
+            	if (i < (galleryImages.length - 1)) {
                 	i++;
                 } else {
                 	i = 0;
                 }
             	gallery.style.setProperty('background-image', 'url(' + galleryImages[i] + ')');
             }, 1000);
+            }
         </script>
     </body>
 </html>
