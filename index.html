@@ -2,88 +2,10 @@
 <html>
 	<head>
 		<title>Welcome To Codemaster United's Page</title>
-		<link rel="stylesheet" href="files/css/styles.css"/>
+		<lik rel="stylesheet" href="files/css/styles.css"/>
+		<script type="module" src="import.js"></script>
 	</head>
 	<body>
-        <div id="header">
-        	<p id="site-heading">Codemaster United</p>
-        </div>
-        <div id="gallery">
-        	<p class="gallery-heading">Welcome To Codemaster United's Github Page</p>
-        </div>
-        <script>
-        	
-        	/* Gallery Section */
-            var gallery = document.getElementById('gallery');
-            var galleryImages = ['https://iili.io/HNg93uf.jpg', 'https://iili.io/HNg9hnp.jpg', 'https://iili.io/HNg9WtR.jpg'];
-            
-            for (var i = 0; i < galleryImages.length; i++) {
-                var image = new Image().src = galleryImages[i];
-            }
-            
-            image.onloadend = function() {
-            	console.log('hh');
-            var i = 0;
-            setInterval(function() {
-            	console.log(i);
-            	if (i < (galleryImages.length - 1)) {
-                	i++;
-                } else {
-                	i = 0;
-                }
-            	gallery.style.setProperty('background-image', 'url(' + galleryImages[i] + ')');
-            }, 1000);
-            }
-        </script>
+        
     </body>
 </html>
-<style>
-* {
-	box-sizing: border-box;
-}
-
-body {
-	margin-top: 50px;
-}
-
-#header {
-	position: fixed;
-	box-shadow: 0 0 3px rgba(0,0,0,0.2);
-	margin-bottom: 100px;
-	width: 100%;
-	height: 45px;
-	padding: 10px 15px;
-	top: 0;
-	left: 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background: #fff;
-}
-
-#site-heading {
-	color: #00ADFF;
-	font-size: 17px;
-	font-weight: 350;
-}
-
-#gallery {
-	background-image: url(https://iili.io/HNg9WtR.jpg);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	width: 100%;
-	aspect-ratio: 5/3;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	left: 0;
-}
-
-.gallery-heading {
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    line-height: 40px;
-}
-</style>
