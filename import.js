@@ -1,2 +1,3 @@
-import helper from "./export.js"; 
-alert(helper);
+import { x } from "./export.js"; 
+x();
+alert('hhh');
