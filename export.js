@@ -1,0 +1,1 @@
+export default var helper = 'cujw';
