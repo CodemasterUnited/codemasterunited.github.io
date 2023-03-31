@@ -1,1 +1,5 @@
-export default var helper = 'cujw';
+function x() {
+	document.body.innerHTML += '<br>This Is From Module';
+}
+
+export { x };
